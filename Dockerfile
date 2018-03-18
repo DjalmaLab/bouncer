@@ -29,3 +29,4 @@ COPY . .
 EXPOSE 8000
 USER bouncer
 CMD ["bin/init-env", "supervisord", "-c" , "conf/supervisord.conf"]
+RUN -p 8000:8000 hypothesis/bouncer
