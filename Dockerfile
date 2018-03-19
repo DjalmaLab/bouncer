@@ -28,5 +28,4 @@ COPY . .
 # Start the web server by default
 EXPOSE 8000
 USER bouncer
-CMD ["bin/init-env", "supervisord", "-c" , "conf/supervisord.conf"]
-RUN 8000:8000 hypothesis/bouncer
+CMD ["bin/init-env", "supervisord", "-c" , "conf/supervisord.conf"] 
